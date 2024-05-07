@@ -6,6 +6,9 @@ app.get('/' , (req,res) =>{
 app.get("/about" , (req,res)=>{
     res.status(200).send("Aboout Page");
 });
+app.get("/contact" , (req,res)=>{
+    res.status(200).send("Contact Page");
+});
 const port=4000;
 app.listen(port,()=>{{
     console.log(`site is runnening at port http://127.0.0.1:${port}`);
